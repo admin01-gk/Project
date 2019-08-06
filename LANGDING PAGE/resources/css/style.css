@@ -1,0 +1,363 @@
+    /*------------------------------------------*/
+    /* ---------------DeFault Setup--------------------*/
+    /*------------------------------------------*/
+    
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        background-color: #ffffff;
+        color: #5a5a5a;
+        text-rendering: optimizeLegibility;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    /*------------------------------------------*/
+    /* -------------REUSABLE COMPOMENT----------*/
+    /*------------------------------------------*/
+    
+    .logo {
+        background-image: linear-gradient(80deg);
+    }
+    
+    .btn {
+        text-decoration: none;
+        color: white;
+        background-color: coral;
+        padding: 15px 30px;
+        border-radius: 20px;
+        margin: 0 5px;
+        display: inline-block;
+        text-align: center;
+        width: 190px;
+        transition: all .3s;
+    }
+    
+    .btn:hover,
+    .btn:active {
+        background-color: white;
+        color: coral;
+    }
+    
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    
+    h1,
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+    
+    h1 {
+        font-size: 300%;
+        font-weight: 400;
+        word-spacing: 10px;
+        color: white;
+        margin-bottom: 50px;
+    }
+    
+    h2 {
+        color: coral;
+        font-size: 180%;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    h2::after {
+        content: " ";
+        display: block;
+        width: 150px;
+        height: 3px;
+        background-color: rgba(255, 146, 5, 0.5);
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    
+    .p-long {
+        text-align: center;
+        color: coral;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 70%;
+        margin-left: 15%;
+        line-height: 140%;
+    }
+    
+    section {
+        padding: 50PX;
+    }
+    /*------------------------------------------*/
+    /* ---------------header--------------------*/
+    /*------------------------------------------*/
+    
+    header {
+        /* rgb(45,95,93) */
+        background-image: linear-gradient(45deg, rgb(2, 33, 64) 25%, rgb(45, 95, 93, 0.05)), url("../img/bg-2.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+    
+    .logo {
+        width: 100px;
+        float: left;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    
+    .main-nav {
+        float: right;
+        list-style: none;
+        margin-right: 70px;
+        margin-top: 55px;
+    }
+    
+    .main-nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 110%;
+        font-weight: 700;
+        transition: border-bottom 0.5s;
+        padding: 3px 0;
+    }
+    
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 3px solid white;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    .heading-main-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%, -55%);
+        width: 1140px;
+    }
+    /*------------------------------------------*/
+    /* ---------------aBOUT SECTION--------------*/
+    /*------------------------------------------*/
+    
+    .about-pic img {
+        width: 90%;
+        border-radius: 20px;
+        border: 5px solid rgb(255, 225, 225);
+        box-shadow: 0px 5px 15px 5px darkgray;
+        /* filter: brightness(50%) blur(2px) */
+        transition: all .5s;
+    }
+    
+    .about-pic {
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    .pictrue-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: lightblue;
+        font-size: 15px;
+        transform: translate(-65%, 100%);
+        opacity: 0;
+        transition: all .5s;
+        text-align: center;
+    }
+    
+    .about-pic:hover img,
+    .about-pic:active img {
+        filter: brightness(50%) blur(2px)
+    }
+    
+    .about-pic:hover .pictrue-title,
+    .about-pic:active .pictrue-title {
+        transform: translate(-60%, -50%);
+        opacity: 1;
+    }
+    /*-------------------------*/
+    /*-------Textimonials---------------*/
+    
+    .textimonials-section {
+        background-image: linear-gradient(45deg, rgb(2, 33, 64) 25%, rgb(45, 95, 93, 0.05)), url("../img/bg-3.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .textimonials-section h2 {
+        margin-bottom: 70px;
+    }
+    
+    blockquote {
+        position: relative;
+        width: 95%;
+        font-size: italic;
+        color: white;
+        line-height: 140%;
+    }
+    
+    blockquote:before {
+        content: " \201C";
+        display: block;
+        font-size: 400%;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+    
+    cite {
+        color: cornflowerblue;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    cite img {
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid darkslategrey;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    /*------------------------*/
+    
+    .contact-section {
+        background-image: linear-gradient(45deg, rgb(2, 33, 64) 25%, rgb(45, 95, 93, 0.05)), url("../img/bg-4.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    /*-----------footer-------------*/
+    
+    footer {
+        text-align: center;
+        background-color: #5a5a5a;
+        color: white;
+        padding: 20px;
+    }
+    /*------------------------------*/
+    
+    .Information {
+        list-style: none;
+        color: white;
+        line-height: 200%;
+        margin-top: 70px;
+        word-spacing: 1px;
+        font-size: 95%;
+    }
+    
+    .Information .small-icon {
+        color: rgb(43, 104, 216);
+        margin-right: 10px;
+    }
+    
+    .Information .small-icon:hover,
+    .Information .small-icon:active {
+        transform: scale(1.3)
+    }
+    
+    .social-icon {
+        margin-top: 50px;
+        list-style: none;
+    }
+    
+    .social-icon li {
+        display: inline-block;
+        font-size: 250%;
+        margin-left: 20px;
+        color: white;
+    }
+    
+    .social-icon li i {
+        transition: all .3s;
+        cursor: pointer;
+    }
+    
+    .social-icon li i:hover,
+    .social-icon li .small-icon:active {
+        transform: scale(1.3);
+        color: coral;
+    }
+    /*-----------form-------------*/
+    
+    form {
+        background-color: rgb(0, 0, 0, .4);
+        margin-left: 40%;
+        width: 68%;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    
+    form .row {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-size: 150%;
+        color: white;
+    }
+    
+    input,
+    textarea {
+        outline: none;
+        padding: 30px;
+        background-color: rgba(100, 91, 91, 0.3);
+        border: 1px solid rgba(20, 19, 19, 0.8);
+        margin-left: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+    
+    input {
+        height: 50px;
+    }
+    
+    input[type=text],
+    input[type=small],
+    textarea {
+        width: 88%;
+        font-size: 100%;
+    }
+    
+    input[type=text]:focus,
+    input[type=small] :focus,
+    textarea:focus {
+        color: white;
+        background-color: rgba(100, 91, 91, 0.8)
+    }
+    
+    form .row:last-child {
+        text-align: center;
+    }
+    
+    input[type=submit] {
+        font-weight: 700;
+        font-size: 100%;
+        border-radius: 5px;
+        width: 60%;
+    }

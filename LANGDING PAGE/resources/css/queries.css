@@ -1,0 +1,145 @@
+/*  BIG tablet to 1200px */
+
+@media only screen and ( max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    .heading-main-box {
+        transform: translateX(-35%)
+    }
+    form {
+        margin-left: 30%;
+    }
+}
+
+
+/*   SMALL tablet to BIG tablet 768 to 1024 */
+
+@media only screen and ( max-width: 1023px) {
+    .logo {
+        width: 150px;
+        margin-left: 40px;
+    }
+    .heading-main-box {
+        transform: translateX(-27%)
+    }
+    .main-nav {
+        margin-right: 15px;
+    }
+    .main-nav li {
+        margin-right: 10px;
+    }
+    .social-icon {
+        font-size: 10px;
+    }
+    .social.icon li {
+        margin-left: 10px;
+    }
+    .Information {
+        margin-top: 0px;
+    }
+    .Information i {
+        display: block;
+    }
+    .Information li {
+        font-size: 20px;
+    }
+    form {
+        width: 70%;
+    }
+    label {
+        font-size: 20px;
+    }
+    .input {
+        font-size: 20px;
+    }
+}
+
+
+/* Small phones to small tablet */
+
+@media only screen and ( max-width: 767px) {
+    .logo {
+        width: 150px;
+        margin-left: 34%;
+    }
+    .main-nav {
+        visibility: hidden;
+    }
+    h1 {
+        word-spacing: 1px;
+        font-size: 190%;
+    }
+    h2 {
+        word-spacing: 1px;
+    }
+    .heading-main-box {
+        transform: translate(-20%, -50%);
+    }
+    .heading-main-box .btn {
+        width: 19%;
+    }
+    .about-pic {
+        text-align: center;
+    }
+    .about-pic img {
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sponsors-section .row .col {
+        width: 100%;
+    }
+    .about-section .row .col {
+        width: 100%;
+    }
+    .about-section .row .p-long {
+        font-size: 15px;
+        text-align: center;
+        margin-left: 55px;
+        ;
+    }
+    .about-section p {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .about-pic p {
+        margin-left: 3%;
+    }
+    .textimonials-section .row .col {
+        margin-bottom: 60px;
+    }
+    form {
+        width: 80%;
+        margin-left: 20%;
+    }
+    form .input {
+        width: 10%;
+    }
+    label {
+        margin-left: 37%;
+    }
+    .Information {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .Information li {
+        font-size: 20px;
+    }
+    .social-icon {
+        text-align: center;
+    }
+    .social-icon li {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* small phones from 0 to 480 px */
+
+@media only screen and ( max-width: 460px) {
+    .col {
+        width: 100%;
+    }
+}
