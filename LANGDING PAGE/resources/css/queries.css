@@ -61,7 +61,8 @@
 @media only screen and ( max-width: 767px) {
     .logo {
         width: 150px;
-        margin-left: 34%;
+        margin: 40%;
+        margin-top: 10px;
     }
     .main-nav {
         visibility: hidden;
@@ -87,6 +88,9 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .pictrue-title {
+        font-size: 20px;
+    }
     .sponsors-section .row .col {
         width: 100%;
     }
@@ -96,8 +100,7 @@
     .about-section .row .p-long {
         font-size: 15px;
         text-align: center;
-        margin-left: 55px;
-        ;
+        margin-left: 100px;
     }
     .about-section p {
         font-size: 15px;
