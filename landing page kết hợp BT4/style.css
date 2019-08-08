@@ -61,10 +61,6 @@ nav .container .navbar-brand {
     margin-left: 30px;
 }
 
-.navbar-toggler .navbar-toggler-icon {
-    border-color: white;
-}
-
 
 /* -------Sử Dụng Lại ------ */
 
@@ -158,6 +154,18 @@ nav .container .navbar-brand {
 
 #border .card {
     background-color: transparent;
+}
+
+footer {
+    background-color: darkslategray;
+    text-align: center;
+    display: flex;
+    color: white;
+    width: 20px;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 
